@@ -1,0 +1,9 @@
+#target {
+  width: var(--target-size);
+  height: var(--target-size);
+  background: var(--color-primary);
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}

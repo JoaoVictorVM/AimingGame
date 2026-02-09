@@ -1,0 +1,16 @@
+.info {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin: var(--space-md) 0;
+}
+
+#game-area {
+  width: var(--game-width);
+  height: var(--game-height);
+  margin: var(--space-md) auto;
+  background: var(--color-surface);
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}

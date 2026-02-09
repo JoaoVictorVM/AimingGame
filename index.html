@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aim Trainer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aim Trainer</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
-    
-    <script src="script.js"></script>
+  <main class="container">
+    <h1>Aim Trainer</h1>
+
+    <div class="info">
+      <span>Pontos: <strong id="score">0</strong></span>
+      <span>Tempo: <strong id="time">30</strong>s</span>
+    </div>
+
+    <div id="game-area">
+      <div id="target"></div>
+    </div>
+
+    <button id="start">Iniciar</button>
+  </main>
+
+  <script type="module" src="src/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+@import "base/variables.css";
+@import "base/normalize.css";
+@import "base/typography.css";
+
+@import "layout/container.css";
+@import "layout/game-area.css";
+
+@import "components/target.css";
