@@ -5,5 +5,9 @@ const startBtn = document.getElementById("start");
 const game = new Game();
 
 startBtn.addEventListener("click", () => {
-  game.start();
+  if (game.isRunning) {
+    game.stop();
+  } else {
+    game.start();
+  }
 });

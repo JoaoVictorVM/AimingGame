@@ -15,9 +15,18 @@ export class Timer {
       this.timeEl.textContent = this.timeLeft;
 
       if (this.timeLeft <= 0) {
-        clearInterval(this.interval);
+        this.stop();
         onEnd();
       }
     }, 1000);
+  }
+
+  stop() {
+    clearInterval(this.interval);
+  }
+
+  reset() {
+    this.timeLeft = this.duration;
+    this.timeEl.textContent = this.timeLeft;
   }
 }
