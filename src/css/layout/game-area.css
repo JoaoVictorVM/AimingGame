@@ -13,4 +13,5 @@
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
+  cursor: none;
 }

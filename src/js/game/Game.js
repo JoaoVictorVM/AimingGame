@@ -1,11 +1,13 @@
 import { Timer } from "./Timer.js";
 import { Score } from "./Score.js";
 import { Target } from "../components/Target.js";
+import { Crosshair } from "../components/Crosshair.js";
 
 export class Game {
   constructor() {
     this.timer = new Timer(30);
     this.score = new Score();
+    this.crosshair = new Crosshair();
     this.target = new Target(this.handleHit.bind(this));
 
     this.isRunning = false;
