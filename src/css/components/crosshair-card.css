@@ -1,0 +1,20 @@
+.crosshair-card {
+    width: 150px;
+    height: 120px;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.crosshair-card:hover {
+    transform: scale(1.05);
+}
+
+.crosshair-card.active {
+    border-color: var(--color-primary);
+}

@@ -1,41 +1,41 @@
 .crosshair {
-  position: fixed;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }
 
 /* Mira padrão - Cruz */
 .crosshair--cross {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .crosshair--cross::before,
 .crosshair--cross::after {
-  content: "";
-  position: absolute;
-  background: white;
+    content: "";
+    position: absolute;
+    background: white;
 }
 
 .crosshair--cross::before {
-  width: 2px;
-  height: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .crosshair--cross::after {
-  height: 2px;
-  width: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+    height: 2px;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Mira alternativa - Bolinha */
 .crosshair--dot {
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
 }

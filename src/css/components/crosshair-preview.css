@@ -1,0 +1,51 @@
+.preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cruz preview */
+.preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview--cross {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.preview--cross::before,
+.preview--cross::after {
+    content: "";
+    position: absolute;
+    background: white;
+}
+
+.preview--cross::before {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.preview--cross::after {
+    height: 2px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Bolinha preview */
+.preview--dot {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+}

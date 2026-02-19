@@ -1,18 +1,18 @@
 :root {
-  --color-bg: #0f172a;
-  --color-surface: #1f4db3;
-  --color-primary: #ef4444;
-  --color-text: #ffffff;
+    --color-bg: #0f172a;
+    --color-surface: #1f4db3;
+    --color-primary: #ef4444;
+    --color-text: #ffffff;
 
-  --game-width: 600px;
-  --game-height: 400px;
-  --target-size: 50px;
+    --game-width: 600px;
+    --game-height: 400px;
+    --target-size: 50px;
 
-  --space-sm: 10px;
-  --space-md: 20px;
-  --space-lg: 40px;
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 40px;
 
-  --radius-md: 10px;
+    --radius-md: 10px;
 
-  --font-main: Arial, sans-serif;
+    --font-main: Arial, sans-serif;
 }

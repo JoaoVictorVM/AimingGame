@@ -1,28 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aim Trainer</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aim Trainer</title>
 
-  <link rel="stylesheet" href="src/css/main.css" />
-</head>
-<body>
-  <main class="container">
-    <h1>Aim Trainer</h1>
+        <link rel="stylesheet" href="src/css/main.css" />
+    </head>
+    <body>
+        <main class="container">
+            <h1>Aim Trainer</h1>
 
-    <div class="info">
-      <span>Pontos: <strong id="score">0</strong></span>
-      <span>Tempo: <strong id="time">30</strong>s</span>
-    </div>
+            <div class="info">
+                <span>Pontos: <strong id="score">0</strong></span>
+                <span>Tempo: <strong id="time">30</strong>s</span>
+            </div>
 
-    <div id="game-area">
-      <div id="target"></div>
-    </div>
+            <div id="game-area">
+                <div id="target"></div>
+            </div>
 
-    <button id="start">Iniciar</button>
-  </main>
+            <button id="start">Iniciar</button>
 
-  <script type="module" src="src/js/main.js"></script>
-</body>
+            <section class="crosshair-selector">
+                <div class="crosshair-card" data-type="cross">
+                    <div class="preview preview--cross"></div>
+                </div>
+
+                <div class="crosshair-card" data-type="dot">
+                    <div class="preview preview--dot"></div>
+                </div>
+            </section>
+        </main>
+
+        <script type="module" src="src/js/main.js"></script>
+    </body>
 </html>

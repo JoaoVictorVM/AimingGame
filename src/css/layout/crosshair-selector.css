@@ -1,0 +1,6 @@
+.crosshair-selector {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}

@@ -4,6 +4,9 @@
 
 @import "layout/container.css";
 @import "layout/game-area.css";
+@import "layout/crosshair-selector.css";
 
 @import "components/target.css";
 @import "components/crosshair.css";
+@import "components/crosshair-preview.css";
+@import "components/crosshair-card.css";
