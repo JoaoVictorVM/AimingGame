@@ -1,0 +1,62 @@
+.end-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgba(6, 6, 6, 0.65);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 20;
+}
+
+.end-modal-overlay--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.end-modal-sheet {
+  width: min(420px, 100%);
+  border-radius: 1.5rem;
+  padding: 2rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: center;
+  background: var(--surface-color, var(--color-bg));
+  box-shadow: 0 24px 55px rgba(5, 6, 12, 0.45);
+  transform: translateY(30px) scale(0.98);
+  opacity: 0;
+  transition:
+    transform 0.45s cubic-bezier(0.25, 1, 0.35, 1),
+    opacity 0.35s cubic-bezier(0.25, 1, 0.35, 1);
+}
+
+.end-modal-sheet--visible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.end-modal-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.end-modal-message {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.end-modal-score {
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.end-modal-score strong {
+  display: block;
+  font-size: 2rem;
+  margin-top: 0.35rem;
+}

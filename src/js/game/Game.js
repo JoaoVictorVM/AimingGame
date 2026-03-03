@@ -3,6 +3,8 @@ import { Score } from "./Score.js";
 import { Target } from "../components/Target.js";
 import { Crosshair } from "../components/Crosshair.js";
 import { CrosshairSelector } from "../components/CrosshairSelector.js";
+import { SoundManager } from "./SoundManager.js";
+import { EndModal } from "../components/EndModal.js";
 
 export class Game {
   constructor() {
@@ -11,6 +13,8 @@ export class Game {
     this.crosshair = new Crosshair();
     this.crosshairSelector = new CrosshairSelector(this.crosshair);
     this.target = new Target(this.handleHit.bind(this));
+    this.soundManager = new SoundManager();
+    this.endModal = new EndModal();
 
     this.isRunning = false;
     this.startButton = document.getElementById("start");
@@ -21,6 +25,7 @@ export class Game {
 
     this.isRunning = true;
 
+    this.endModal.hide();
     this.score.reset();
     this.timer.start(this.end.bind(this));
     this.target.show();
@@ -45,11 +50,13 @@ export class Game {
     if (!this.isRunning) return;
 
     this.score.increment();
+    this.soundManager.playHitSound();
     this.target.move();
   }
 
   end() {
+    const finalScore = this.score.value;
     this.stop();
-    alert(`Fim de jogo! Pontuação: ${this.score.value}`);
+    this.endModal.show(finalScore);
   }
 }
