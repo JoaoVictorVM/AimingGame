@@ -4,3 +4,10 @@
     gap: var(--space-lg);
     margin-top: var(--space-lg);
 }
+
+@media (max-width: 640px) {
+    .crosshair-selector {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+}

@@ -2,3 +2,9 @@
     text-align: center;
     padding: var(--space-lg);
 }
+
+@media (max-width: 640px) {
+    .container {
+        padding: var(--space-md);
+    }
+}

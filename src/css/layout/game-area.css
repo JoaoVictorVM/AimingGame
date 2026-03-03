@@ -15,3 +15,17 @@
     overflow: hidden;
     cursor: none;
 }
+
+@media (max-width: 720px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    #game-area {
+        width: min(var(--game-width), calc(100vw - var(--space-lg)));
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+}

@@ -1,0 +1,29 @@
+#start {
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  border: 3px solid var(--color-surface);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#start:hover {
+  transform: translateY(-1px) scale(1.01);
+  border: 3px solid var(--color-primary);
+}
+
+#start:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+#start:focus-visible {
+  outline: 3px solid rgba(239, 68, 68, 0.4);
+  outline-offset: 3px;
+}
